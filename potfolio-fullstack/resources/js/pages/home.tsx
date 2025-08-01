@@ -1,3 +1,7 @@
+import About from "@/components/home/about";
+import Contacts from "@/components/home/contacts";
+import Hero from "@/components/home/hero";
+import Projects from "@/components/home/projects";
 import MainLayout from "@/layouts/main-layout";
 import { Head } from "@inertiajs/react";
 
@@ -6,10 +10,10 @@ const Home = () => {
         <MainLayout>
             <Head title="My Portfolio"/>
 
-            <div className="text-center mt-16">
-        <h1 className="text-4xl font-bold text-indigo-700">Hi, I'm Edmyr 👋</h1>
-        <p className="mt-4 text-gray-700">A passionate Full-Stack Web Developer in the making.</p>
-      </div>
+            <Hero />
+            <About />
+            <Projects />
+            <Contacts />
         </MainLayout>
     );
 }
